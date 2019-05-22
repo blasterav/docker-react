@@ -9,7 +9,7 @@ script:
   - docker run -d phoosop/docker-react npm run test -- --coverage
 
 deploy:
-  provide: elasticbeanstalk
+  provider: elasticbeanstalk
   region: "eu-west-1"
   app: "docker"
   env: "Docker-env"
